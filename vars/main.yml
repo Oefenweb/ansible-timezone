@@ -1,2 +1,3 @@
 # vars file for timezone
 ---
+timezone_etc_timezone: /etc/timezone
