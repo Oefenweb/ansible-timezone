@@ -1,4 +1,4 @@
-# handlers file for timezone
+# handlers file
 ---
 - name: update tzdata
   command: dpkg-reconfigure --frontend noninteractive tzdata

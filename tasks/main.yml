@@ -1,4 +1,4 @@
-# tasks file for timezone
+# tasks file
 ---
 - name: configure /etc/localtime
   file:

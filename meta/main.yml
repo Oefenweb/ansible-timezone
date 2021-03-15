@@ -1,6 +1,7 @@
-# meta file for timezone
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: timezone
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
