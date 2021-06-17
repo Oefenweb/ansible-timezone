@@ -1,5 +1,16 @@
 # tasks file
 ---
+- name: install
+  apt:
+    name: "{{ timezone_dependencies }}"
+    state: "{{ apt_install_state | default('latest') }}"
+    update_cache: true
+    cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
+  tags:
+    - configuration
+    - timezone
+    - timezone-install
+
 - name: configure /etc/localtime
   file:
     src: /usr/share/zoneinfo/{{ timezone_zone }}
