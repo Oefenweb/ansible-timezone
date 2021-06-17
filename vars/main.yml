@@ -1,3 +1,5 @@
 # vars file
 ---
+timezone_dependencies:
+  - tzdata
 timezone_etc_timezone: /etc/timezone
