@@ -1,4 +1,5 @@
 # handlers file
 ---
 - name: update tzdata
-  command: dpkg-reconfigure --frontend noninteractive tzdata
+  command: >
+    dpkg-reconfigure --frontend noninteractive tzdata
