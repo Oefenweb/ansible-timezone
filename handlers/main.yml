@@ -3,3 +3,4 @@
 - name: update tzdata
   ansible.builtin.command: >
     dpkg-reconfigure --frontend noninteractive tzdata
+  changed_when: true
