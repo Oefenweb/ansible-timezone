@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: install
-  apt:
+  ansible.builtin.apt:
     name: "{{ timezone_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
@@ -12,7 +12,7 @@
     - timezone-install
 
 - name: configure /etc/localtime
-  file:
+  ansible.builtin.file:
     src: /usr/share/zoneinfo/{{ timezone_zone }}
     dest: /etc/localtime
     state: link
@@ -23,7 +23,7 @@
     - timezone-configure-etc-localtime
 
 - name: configure /etc/timezone
-  template:
+  ansible.builtin.template:
     src: "{{ timezone_etc_timezone.lstrip('/') }}.j2"
     dest: "{{ timezone_etc_timezone }}"
     owner: root

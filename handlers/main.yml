@@ -1,5 +1,5 @@
 # handlers file
 ---
 - name: update tzdata
-  command: >
+  ansible.builtin.command: >
     dpkg-reconfigure --frontend noninteractive tzdata
