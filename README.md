@@ -23,7 +23,7 @@ None
 ---
 - hosts: all
   roles:
-    - timezone
+    - oefenweb.timezone
 ```
 
 #### License
