@@ -28,7 +28,7 @@
     dest: "{{ timezone_etc_timezone }}"
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   notify: update tzdata
   tags:
     - configuration
